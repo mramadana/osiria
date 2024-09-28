@@ -1,0 +1,47 @@
+$ltr: 'html[lang="en"]';
+$rtl: 'html[lang="ar"]';
+$theme-light: ".light-theme";
+$theme-dark: ".dark-theme";
+/*********************************************************
+  // global color variables
+**********************************************************/
+
+// colors
+$dark: #020b1b;
+$blue: #23a3c8;
+$blue-light: rgba(37,163,200,.07);
+$green: #6dbe0a;
+$green-light: rgba(109,190,10,.16);
+$white: #ffffff;
+$dark-theme: #031122;
+$dark-color: #555555;
+$light-color: #898989;
+$gold: #fdb813;
+
+
+/*********************************************************
+  // Font variables
+**********************************************************/
+
+$font-normal: 'HSDream-Light', sans-serif, 'Font Awesome 5 Free';
+
+
+/*********************************************************
+  // spacing variables
+**********************************************************/
+// these variable/s is still not applied on all elements
+
+$space-between: 20px;
+$spacer: 10px;
+
+/*********************************************************
+  // screens
+**********************************************************/
+$screen-xxl: 1720px;
+$screen-xx: 1600px;
+$screen-xl: 1280px;
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+$screen-xs: 550px;
+$screen-xxs: 320px;

@@ -1,0 +1,116 @@
+
+@import 'variables';
+*{
+    border: 0;
+    outline: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'HSDream-Light';
+    src: url('../fonts/.ttf');
+    font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: $font-normal;
+    overflow-x: hidden;
+    #{$ltr} & {
+        direction: ltr;
+        text-align: left;
+      }
+      #{$rtl} & {
+          direction: rtl; 
+          text-align: right;
+      }
+    &#{$theme-light} {
+        background-color: $white;
+        color: $dark-color;
+    }
+    &#{$theme-dark} {
+        color: $white;
+        background-color: $dark-theme;
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+
+p {
+  color: #a9a9a9;
+  margin: 0;
+  font-size: 1em;
+}
+input:focus::placeholder
+{
+    color: transparent;
+}
+*::placeholder
+{
+    color: #444;
+    transition: all .3s ease
+}
+form
+{
+    padding: 0;
+    margin: 0 auto;
+    #{$ltr} & {
+        text-align: left;
+      }
+      #{$rtl} & {
+          text-align: right;
+      }
+	width: 100%;
+}
+
+a {
+    text-decoration: none !important; 
+}
+.owl-carousel 
+{
+    touch-action: manipulation; 
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0; 
+}
+button,
+input[type="submit"]
+{
+    cursor: pointer;
+}
+button,
+a {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+select:focus,
+button:focus,
+input:focus
+{
+    outline: 0;
+}
+/* owl carousel*/
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+/* owl carousel*/
+
+@media(min-width: $screen-xxl) {
+    .container {
+        max-width: 1418px;
+    }
+}
